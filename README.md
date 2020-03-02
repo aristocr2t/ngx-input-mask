@@ -1,2 +1,2 @@
-# angular-input-mask
+# ngx-input-mask
 Simple input mask directive for angular

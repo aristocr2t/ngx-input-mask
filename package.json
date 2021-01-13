@@ -1,56 +1,53 @@
 {
-  "name": "ngx-input-mask",
-  "version": "1.0.1",
-  "description": "Simple input mask directive for angular",
-  "jsnext:main": "bundles/input-mask.esm.js",
-  "main": "bundles/input-mask.umd.js",
-  "module": "index.js",
-  "typings": "index.d.ts",
-  "dependencies": {
-    "@angular/core": "^5.0.1",
-    "@angular/forms": "^5.0.1",
-    "rxjs": "^5.5.2"
-  },
-  "devDependencies": {
-    "fs": "0.0.1-security",
-    "node-sass": "^4.7.2",
-    "rollup": "^0.51.5",
-    "rollup-plugin-angular": "^0.5.3",
-    "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-typescript": "^0.8.1",
-    "typescript": "^2.6.1"
-  },
-  "peerDependencies": {
-    "@angular/core": ">=2.0.0 || >=4.0.0",
-    "@angular/forms": ">=2.0.0 || >=4.0.0",
-    "rxjs": ">=5.0.0"
-  },
-  "scripts": {
-    "build": "npm run bundle && npm run copy",
-    "bundle": "rimraf dist && rollup -c rollup.config.umd.js && rollup -c rollup.config.esm.js && tsc",
-    "copy": "node tools/copy-package.js",
-    "publish": "cd ./dist && npm publish"
-  },
-  "keywords": [
-    "angular",
-    "angular2",
-    "angular 2",
-    "angular 4",
-    "angular 5",
-    "input-mask"
-  ],
-  "author": {
-    "name": "Shamil' Shaymardanov",
-    "email": "shamil.amirovich@gmail.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aristocr2t/angular-input-mask.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Aristocr2t/angular-input-mask/issues"
-  },
-  "homepage": "https://github.com/Aristocr2t/angular-input-mask#readme"
+	"name": "ngx-input-mask",
+	"version": "2.0.1",
+	"description": "Input mask directive for angular",
+	"jsnext:main": "ngx-input-mask.esm.js",
+	"main": "ngx-input-mask.umd.js",
+	"module": "index.js",
+	"typings": "index.d.ts",
+	"scripts": {
+		"prebuild": "npm install && rimraf dist/",
+		"build": "rollup -c tools/rollup-config.js && node tools/build.js",
+		"prepublishOnly": "npm run build && node tools/prepublish.js",
+		"release": "RELEASE_MODE=1 npm run prepublishOnly && npm publish --access public dist/",
+		"lint": "eslint \"src/**/*.ts\" -f codeframe"
+	},
+	"devDependencies": {
+		"@evojs/eslint-plugin": "^0.1.0",
+		"@rollup/plugin-commonjs": "^17.0.0",
+		"@rollup/plugin-node-resolve": "^11.0.1",
+		"@rollup/plugin-typescript": "^8.1.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^7.17.0",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.36.1",
+		"rollup-plugin-angular": "^0.5.3",
+		"rollup-plugin-typescript2": "^0.29.0",
+		"typescript": "^4.1.3"
+	},
+	"peerDependencies": {
+		"@angular/core": ">=9.0.0",
+		"@angular/forms": ">=9.0.0",
+		"rxjs": ">=6.0.0"
+	},
+	"keywords": [
+		"angular",
+		"angular2",
+		"ngx-input-mask",
+		"input-mask"
+	],
+	"author": {
+		"name": "Shamil Sultanov",
+		"email": "shamil.amirovich@gmail.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aristocr2t/ngx-input-mask.git"
+	},
+	"bugs": {
+		"url": "https://github.com/aristocr2t/ngx-input-mask/issues"
+	},
+	"homepage": "https://github.com/aristocr2t/ngx-input-mask#readme"
 }

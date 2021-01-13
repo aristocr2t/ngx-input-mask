@@ -1,29 +1,15 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "declaration": true,
-    "outDir": "dist",
-    "lib": [
-      "es2015", 
-      "dom"
-    ]
-  },
-  "files": [
-    "index.ts",
-    "src/input-mask.directive.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "bundles"
-  ],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true,
-    "preserveWhiteSpaces": false
-  }
+	"compilerOptions": {
+		"baseUrl": "./",
+		"declaration": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"lib": ["esnext", "dom"],
+		"module": "es6",
+		"removeComments": true,
+		"strict": true,
+		"target": "es5"
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules/", "bundles/"]
 }

@@ -2,7 +2,7 @@
 
 Simple input mask directive for angular.
 
-![@evojs/http npm version](https://img.shields.io/npm/v/@evojs/http.svg) ![supported node version for @evojs/http](https://img.shields.io/node/v/@evojs/http.svg) ![total npm downloads for @evojs/http](https://img.shields.io/npm/dt/@evojs/http.svg) ![monthly npm downloads for @evojs/http](https://img.shields.io/npm/dm/@evojs/http.svg) ![npm licence for @evojs/http](https://img.shields.io/npm/l/@evojs/http.svg)
+![ngx-input-mask npm version](https://img.shields.io/npm/v/ngx-input-mask.svg) ![supported node version for ngx-input-mask](https://img.shields.io/node/v/ngx-input-mask.svg) ![total npm downloads for ngx-input-mask](https://img.shields.io/npm/dt/ngx-input-mask.svg) ![monthly npm downloads for ngx-input-mask](https://img.shields.io/npm/dm/ngx-input-mask.svg) ![npm licence for ngx-input-mask](https://img.shields.io/npm/l/ngx-input-mask.svg)
 
 ## Simple usage
 

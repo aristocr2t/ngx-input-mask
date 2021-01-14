@@ -1,53 +1,58 @@
 {
-	"name": "ngx-input-mask",
-	"version": "2.0.1",
-	"description": "Input mask directive for angular",
-	"jsnext:main": "ngx-input-mask.esm.js",
-	"main": "ngx-input-mask.umd.js",
-	"module": "index.js",
-	"typings": "index.d.ts",
-	"scripts": {
-		"prebuild": "npm install && rimraf dist/",
-		"build": "rollup -c tools/rollup-config.js && node tools/build.js",
-		"prepublishOnly": "npm run build && node tools/prepublish.js",
-		"release": "RELEASE_MODE=1 npm run prepublishOnly && npm publish --access public dist/",
-		"lint": "eslint \"src/**/*.ts\" -f codeframe"
-	},
-	"devDependencies": {
-		"@evojs/eslint-plugin": "^0.1.0",
-		"@rollup/plugin-commonjs": "^17.0.0",
-		"@rollup/plugin-node-resolve": "^11.0.1",
-		"@rollup/plugin-typescript": "^8.1.0",
-		"cross-env": "^7.0.3",
-		"eslint": "^7.17.0",
-		"rimraf": "^3.0.2",
-		"rollup": "^2.36.1",
-		"rollup-plugin-angular": "^0.5.3",
-		"rollup-plugin-typescript2": "^0.29.0",
-		"typescript": "^4.1.3"
-	},
-	"peerDependencies": {
-		"@angular/core": ">=9.0.0",
-		"@angular/forms": ">=9.0.0",
-		"rxjs": ">=6.0.0"
-	},
-	"keywords": [
-		"angular",
-		"angular2",
-		"ngx-input-mask",
-		"input-mask"
-	],
-	"author": {
-		"name": "Shamil Sultanov",
-		"email": "shamil.amirovich@gmail.com"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/aristocr2t/ngx-input-mask.git"
-	},
-	"bugs": {
-		"url": "https://github.com/aristocr2t/ngx-input-mask/issues"
-	},
-	"homepage": "https://github.com/aristocr2t/ngx-input-mask#readme"
+  "name": "ngx-input-mask-workspace",
+  "version": "2.0.4",
+  "description": "Input mask directive for angular",
+  "scripts": {
+    "test": "ng test",
+    "prebuild": "npm install && rimraf dist/",
+    "build": "ng build ngx-input-mask --prod",
+    "prepublishOnly": "npm run build",
+    "release": "npm publish --access public dist/",
+    "lint": "eslint \"src/**/*.ts\" -f codeframe"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~11.0.9",
+    "@angular/common": "~11.0.9",
+    "@angular/compiler": "~11.0.9",
+    "@angular/core": "~11.0.9",
+    "@angular/forms": "~11.0.9",
+    "@angular/platform-browser": "~11.0.9",
+    "@angular/platform-browser-dynamic": "~11.0.9",
+    "@angular/router": "~11.0.9",
+    "rxjs": "~6.6.3",
+    "tslib": "^2.1.0",
+    "zone.js": "~0.10.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.7",
+    "@angular/cli": "~11.0.7",
+    "@angular/compiler-cli": "~11.0.9",
+    "@evojs/eslint-plugin": "^0.1.0",
+    "@types/jasmine": "~3.6.2",
+    "@types/node": "^12.19.13",
+    "codelyzer": "^6.0.1",
+    "eslint": "^7.17.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.2",
+    "karma": "~5.1.1",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.1",
+    "karma-jasmine-html-reporter": "^1.5.4",
+    "ng-packagr": "^11.0.3",
+    "protractor": "~7.0.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "~8.3.0",
+    "typescript": "~4.0.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristocr2t/ngx-input-mask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aristocr2t/ngx-input-mask/issues"
+  },
+  "homepage": "https://github.com/aristocr2t/ngx-input-mask#readme"
 }

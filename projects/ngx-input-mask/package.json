@@ -1,0 +1,32 @@
+{
+  "name": "ngx-input-mask",
+  "version": "2.0.4",
+  "description": "Input mask directive for angular",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=10.0.0",
+    "@angular/core": ">=10.0.0",
+    "@angular/forms": ">=10.0.0"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ngx-input-mask",
+    "input-mask"
+  ],
+  "author": {
+    "name": "Shamil Sultanov",
+    "email": "shamil.amirovich@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristocr2t/ngx-input-mask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aristocr2t/ngx-input-mask/issues"
+  },
+  "homepage": "https://github.com/aristocr2t/ngx-input-mask#readme"
+}

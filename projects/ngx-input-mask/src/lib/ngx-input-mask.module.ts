@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { InputMaskDirective } from './input-mask.directive';
+import { InputMaskDirective } from './ngx-input-mask.directive';
 import { DEFAULT_MASK_TEMPLATES, MASK_TEMPLATES } from './mask-templates';
 
 @NgModule({

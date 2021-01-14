@@ -1,15 +1,31 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./",
-		"declaration": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"lib": ["esnext", "dom"],
-		"module": "es6",
-		"removeComments": true,
-		"strict": true,
-		"target": "es5"
-	},
-	"include": ["src/**/*.ts"],
-	"exclude": ["node_modules/", "bundles/"]
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "ngx-input-mask": [
+        "dist/ngx-input-mask",
+        "dist"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

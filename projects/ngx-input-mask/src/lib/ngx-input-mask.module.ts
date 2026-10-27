@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 
+import { provideInputMask } from './mask-templates';
 import { InputMaskDirective } from './ngx-input-mask.directive';
-import { DEFAULT_MASK_TEMPLATES, MASK_TEMPLATES } from './mask-templates';
 
 @NgModule({
-	imports: [ReactiveFormsModule],
-	exports: [InputMaskDirective],
-	declarations: [InputMaskDirective],
-	providers: [{ provide: MASK_TEMPLATES, useValue: DEFAULT_MASK_TEMPLATES }],
+  imports: [InputMaskDirective],
+  exports: [InputMaskDirective],
+  providers: [provideInputMask()],
 })
-export class InputMaskModule {
-}
+export class InputMaskModule {}

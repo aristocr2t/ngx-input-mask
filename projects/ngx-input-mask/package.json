@@ -1,15 +1,16 @@
 {
   "name": "ngx-input-mask",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "Input mask directive for angular",
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   },
   "peerDependencies": {
-    "@angular/common": ">=10.0.0",
-    "@angular/core": ">=10.0.0",
-    "@angular/forms": ">=10.0.0"
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/forms": "^22.0.0"
   },
+  "sideEffects": false,
   "keywords": [
     "angular",
     "angular2",
